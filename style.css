@@ -281,9 +281,9 @@ footer{
     margin-left: 0;
     margin-right: 0;
   }
-  /* .banner .btn-primary{
-    margin-bottom: 30px;
-  } */
+  .banner .btn-primary{
+    width: 200px;
+  }
   .company-container{
     grid-template-columns: 1fr;
     justify-items: center;
