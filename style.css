@@ -189,14 +189,82 @@
   line-height: auto;
   color: rgba(224, 44, 109, 0.87);
 }
-.hide{
-  display: none;
+
+/* feature related style*/
+.feature{
+  max-width: 1110px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
 }
+.feature-image img{
+  border-radius: 7px;
+  /* width: 100%; */
+}
+.feature-contet-title{
+ font-size: 2.375rem;
+ font-weight: bold;
+ line-height: 60px;
+ color: #0A0826;
+ margin-bottom: 16px;
+}
+.feature-content-description{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 28px;
+  color: #6C6C6C;
+  margin-bottom: 16px;
+}
+
+/* footer related style*/
+footer{
+  max-width: 1440px;
+  height: 200px;
+  background-color: rgb(10, 8, 38);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-title{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.footer-sub-title{
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 7px;
+}
+.footer-description{
+  color: #FFFFFF;
+   font-size: 0.875rem;
+   font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.footer-icon{
+  color: #FFFFFF;
+}
+.fa-brands, .fa-solid{
+  margin-right: 16px;
+}
+
 /*responsive design related style*/
 @media screen and (max-width: 576px) {
   .navbar{
     flex-direction: column;
     width: auto;
+  }
+  .brand-name{
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
   .navbar-unordered-list{
     display: grid;
@@ -232,6 +300,16 @@
     align-items: center;
     margin-bottom: 30px;
   }
+  .feature{
+  flex-direction: column;
+  /* width: auto; */
+  }
+  .feature-image img{
+    width: 100%;
+  }
+  .feature-content{
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -259,5 +337,15 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+  }
+  .feature{
+  flex-direction: column;
+  /* width: auto; */
+  }
+  .feature-image img{
+    width: 100%;
+  }
+  .feature-content{
+    text-align: center;
   }
 }
