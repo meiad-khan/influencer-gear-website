@@ -96,6 +96,29 @@
   margin-left: 10px;
 }
 
+
+/* collaborators company related style*/
+.collaborators{
+  max-width: 1110px;
+  height: 110px;
+  margin: 80px auto 100px;
+  padding: 35px 60px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
+  border-top: 1px mixed black;
+  border-bottom: 1px mixed black;
+  /* background-color: aqua; */
+}
+.company-container{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 60px;
+
+}
+
+
+.hide{
+  display: none;
+}
 /*responsive design related style*/
 @media screen and (max-width: 576px) {
   .navbar{
@@ -116,5 +139,29 @@
   .banner-image{
     margin-left: 0;
     margin-right: 0;
+  }
+  .company-container{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .collaborators{
+    height: auto;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .navbar{
+    padding: 0 30px;
+  }
+  .banner{
+    gap: 50px;
+    padding: 0 25px;
+  }
+  .company-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .collaborators{
+    height: auto;
   }
 }
