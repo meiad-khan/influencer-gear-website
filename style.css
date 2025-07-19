@@ -323,6 +323,9 @@ footer{
     gap: 50px;
     padding: 0 25px;
   }
+  .banner .btn-primary{
+    width: 200px;
+  }
   .company-container{
     grid-template-columns: repeat(3, 1fr);
   }
