@@ -1,0 +1,120 @@
+.poppins-font{
+  font-family: "Poppins", sans-serif;
+
+}
+/* shared style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header related style*/
+.header{
+  max-width: 1440px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+.navbar-unordered-list{
+  display: flex;
+ 
+}
+.link-item{
+  list-style-type: none;
+  margin-right: 30px;
+}
+.link-anchor{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3A3A3A;
+}
+.brand-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3A3A3A;
+}
+
+.banner{
+  display: flex;
+  max-width: 1200px;
+  height: 475px;
+  margin: 80px auto 0;
+  justify-content: space-between;
+  align-items: center;
+  gap:100px;
+}
+.banner-content{
+  width: 53%;
+}
+.banner-image{
+  width: 47%;
+  height: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url(images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.banner-image .image{
+  width: 85%;
+}
+.banner-content-title{
+  font-size: 3.25rem;
+  font-weight: bold;
+  line-height: 70px;
+  color: #3A3A3A;
+  margin-bottom: 16px;
+}
+.banner-content-description{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3A3A3A;
+  margin-bottom: 16px;
+}
+.btn-primary{
+  background-color: #E02C6D;
+  border:none;
+  border-radius: 41px;
+  width: 196px;
+  height: 44px;
+  padding: 10px 24px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn-primary .fa-solid{
+  margin-left: 10px;
+}
+
+/*responsive design related style*/
+@media screen and (max-width: 576px) {
+  .navbar{
+    flex-direction: column;
+    width: auto;
+  }
+  .navbar-unordered-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .link-item{
+    margin-right: 10px;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  .banner-image{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
